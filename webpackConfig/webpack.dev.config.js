@@ -29,20 +29,26 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          }
-        ]
+        use: [ {
+          loader: 'style-loader'
+        }, {
+          loader: 'css-loader'
+        }]
       },
-      // {
-      //   test: /\.less/,
-      //   exclude: /^node_modules$/,
-      //   loaders: ['style', 'css', 'autoprefixer', 'less']
-      // },
+      {
+        test: /\.less$/,
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader"
+        }, {
+          loader: "less-loader", options: {
+            paths: [
+              path.resolve(__dirname, "src")
+            ]
+          }
+        }]
+      },
       {
         test: /\.(eot|woff|svg|ttf|woff2|gif|appcache)(\?|$)/,
         exclude: /^node_modules$/,

@@ -1,5 +1,4 @@
-@import '~antd/dist/antd.css';
+/* @import '~antd/dist/antd.css'; */
+/* @import 'antd-mobile/dist/antd-mobile.css'; */
 
-* {
-  text-align: center;
-}
+* {margin:0;padding:0;}
