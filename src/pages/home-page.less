@@ -29,6 +29,13 @@
       background-color: #fff;
       margin: 0 9px;
       border-radius:3px;
+      .icon-search {
+        width: 15px;
+        height: 15px;
+        background-image: url('../assets/img/icon-search.png');
+        background-size: 100% 100%;
+        margin-right: 6px;
+      }
       span {
         font-size:15px;
         color: #BBBBBB;
@@ -64,12 +71,14 @@
     }
     .ad {
       .row;
-      justify-content: space-between;
       margin-top: 18px;
       img {
         width: 160px;
         height: 100px;
         border-radius: 2px;
+        &.mr15 {
+          margin-left: 15px;
+        }
       }
     }
     .article {
@@ -83,8 +92,17 @@
           font-weight: 600;
         }
         .switch {
+          .row;
+          align-items: center;
           font-size: 14px;
           color: #BBBBBB;
+          .icon-switch {
+            width: 16px;
+            height: 14px;
+            background-image: url('../assets/img/icon-refresh.png');
+            background-size: 100% 100%;
+            margin-right: 5px;
+          }
         }
       }
 

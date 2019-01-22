@@ -19,8 +19,8 @@ class home extends React.Component<Props, State> {
       <div className="p-home">
         <div className="search">
           <div className="search-input">
-            <span>搜索</span>
-            <input type="text"/>
+            <div className="icon-search"></div>
+            <input type="text" placeholder="搜索"/>
             <div className="icon-clear">
               <div className="icon-clear-a"></div>
               <div className="icon-clear-b"></div>

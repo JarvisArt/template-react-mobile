@@ -29,6 +29,7 @@ class home extends React.Component<Props, State> {
       <div className="p-home">
         <div className="search">
           <div className="search-input">
+            <div className="icon-search"></div>
             <span>搜索</span>
           </div>
         </div>
@@ -48,14 +49,14 @@ class home extends React.Component<Props, State> {
           </div>
           <div className="ad">
             <img src="http://thyrsi.com/t6/660/1547997704x2890191853.png" alt=""/>
-            <img src="http://thyrsi.com/t6/660/1547997723x2890191853.png" alt=""/>
+            <img className="mr15" src="http://thyrsi.com/t6/660/1547997723x2890191853.png" alt=""/>
           </div>
           <p></p>
           <div className="article">
             <div className="article-head">
               <span className="title">主标题</span>
               <div className="switch">
-                <div></div>
+                <div className="icon-switch"></div>
                 <span>换一批</span>
               </div>
             </div>

@@ -41,14 +41,20 @@
       background-color: #fff;
       margin-left: 9px;
       border-radius:3px;
-      span {
-        font-size:15px;
-        color: #BBBBBB;
-        margin: 0 10px;
+      .icon-search {
+        width: 15px;
+        height: 15px;
+        background-image: url('../assets/img/icon-search.png');
+        background-size: 100% 100%;
+        margin: 0 6px 0 12px;
       }
       input {
+        font-size:15px;
         flex: 1;
-        border: 0;
+        border: 0; 
+        &::placeholder {
+          color: #BBBBBB;
+        }
       }
       .icon-clear {
         position: relative;
@@ -101,7 +107,7 @@
           span {
             font-size: 14px;
             color: #AAAAAA;
-            font-weight: 600;
+            margin-right: 4px;
             &.color-first { color: #FB6248; }
             &.color-second { color: #FEBA2C; }
             &.color-third { color: #F2E220; }
