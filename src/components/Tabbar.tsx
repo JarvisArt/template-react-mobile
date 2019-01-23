@@ -23,7 +23,21 @@ class tabbar extends React.Component<Props, State> {
   handleSelect(index: number, event) {
     this.setState({ active: index });
     // todo 跳转
-    
+    console.log(index)
+    switch (index) {
+      case 0:
+        window.location.href = '/#/home-page'
+        break
+      case 1:
+        window.location.href = '/#/Article-detail'
+        break
+      case 2:
+        window.location.href = '/#/member'
+        break
+      case 3:
+        window.location.href = '/#/home-page'
+        break
+    }
   }
 
   render() {
