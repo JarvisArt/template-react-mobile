@@ -30,6 +30,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^2.1.0",
     "less": "^3.9.0",
+    "postcss-pxtorem": "^4.0.1",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "typescript": "^3.2.2",

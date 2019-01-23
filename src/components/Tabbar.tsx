@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { render } from 'react-dom';
+import { HashRouter, Route, Switch, Redirect, Link } from 'react-router-dom';
+import { withRouter } from 'react-router'; 
 import './tabbar.less';
 
 interface Props {};
@@ -17,9 +19,11 @@ class tabbar extends React.Component<Props, State> {
 
   tabbarList = ['首页', '发现', '圈子', '我的']
 
+
   handleSelect(index: number, event) {
     this.setState({ active: index });
     // todo 跳转
+    
   }
 
   render() {

@@ -3,13 +3,21 @@ import { render } from 'react-dom';
 import { HashRouter, Route, Switch, Redirect, Link } from 'react-router-dom';
 import Tabbar from "./components/Tabbar";
 import ArticleDetail from "./pages/ArticleDetail";
-// import './assets/style/app.css';
+import Member from "./pages/Member";
+import './assets/style/app.less';
+import './assets/js/rem.js';
 import 'antd-mobile/dist/antd-mobile.css';
 
 render((
   <HashRouter>
     <div>
-      <Route path="/article-detail" component={ArticleDetail} />
+      <Switch>
+        <Route path="/article-detail" component={ArticleDetail} />
+        <Route path="/member" component={Member} />
+        {/* <Route path="/" render={() => {
+          return <Redirect to="/article-detail" />
+        }} /> */}
+      </Switch>
       <Tabbar />
     </div>
   </HashRouter>
