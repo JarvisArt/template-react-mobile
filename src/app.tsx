@@ -17,7 +17,7 @@ import 'antd-mobile/dist/antd-mobile.css';
 render((
   <HashRouter>
     <div>
-      <Route path="/home-page" component={HomePage} />
+      <Route exact path="/" component={HomePage} />
       <Route path="/search" component={Search} />
       <Route path="/article-detail" component={ArticleDetail} />
       <Route path="/base-from" component={baseFrom} />

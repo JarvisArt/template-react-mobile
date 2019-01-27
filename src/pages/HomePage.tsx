@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { render } from 'react-dom';
+import { createHashHistory } from 'history';
 import ArticleList from "../components/ArticleList";
 import './home-page.less';
 
@@ -10,6 +11,11 @@ class home extends React.Component<Props, State> {
 
   constructor(props) {
     super(props);
+    this.toSearch = this.toSearch.bind(this);
+  }
+
+  toSearch() {
+    createHashHistory().push('/search');
   }
 
   classifyList = [
@@ -28,7 +34,7 @@ class home extends React.Component<Props, State> {
     return (
       <div className="p-home">
         <div className="search">
-          <div className="search-input">
+          <div className="search-input" onClick={this.toSearch}>
             <div className="icon-search"></div>
             <span>搜索</span>
           </div>
@@ -61,7 +67,7 @@ class home extends React.Component<Props, State> {
               </div>
             </div>
             <ArticleList
-              articleList={this.articleListData} />
+              articleList={this.articleListData}/>
           </div>
         </div>
       </div>

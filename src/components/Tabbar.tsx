@@ -26,7 +26,7 @@ class tabbar extends React.Component<Props, State> {
     console.log(index)
     switch (index) {
       case 0:
-        window.location.href = '/#/home-page'
+        window.location.href = '/#/'
         break
       case 1:
         window.location.href = '/#/Article-detail'

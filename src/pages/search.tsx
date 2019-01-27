@@ -16,7 +16,7 @@ class home extends React.Component<Props, State> {
 
   render() {
     return (
-      <div className="p-home">
+      <div className="p-search">
         <div className="search">
           <div className="search-input">
             <div className="icon-search"></div>
